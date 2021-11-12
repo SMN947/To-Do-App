@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ToDo App</string>
+    <string name="save">Guardar</string>
+    <string name="new_task">Nombre de la tarea</string>
+    <string name="new_list">Nombre de la lista</string>
+    <string name="tasks">Tareas de la lista </string>
+    <string name="lists">Listas</string>
+
+    <!-- MENU -->
+    <string name="Home">Home</string>
+    <string name="About">About</string>
+    <string name="Help">Ayuda</string>
+    <string name="Version">v 0.1</string>
+</resources>

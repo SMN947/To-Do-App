@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/newText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Elemento"
+        android:gravity="center_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <androidx.constraintlayout.widget.Barrier
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:barrierDirection="top" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <EditText
+                android:id="@+id/newListText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/new_list"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/newListText"
+                android:ems="10"
+                android:inputType="date"
+                android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/newListButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fecha"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:layout_weight="2"
+                android:layout_span="2" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
